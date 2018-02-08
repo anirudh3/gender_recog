@@ -61,10 +61,10 @@ for v in w[int(len(w) * 0.8):]:
 
 # classifying using SVM
 
-clf = SVC(kernel='poly', degree=2, verbose=True)
+clf = SVC(kernel='poly', degree=5, verbose=True)
 clf.fit(inp_train, label_train)
 
-print clf.score(inp_test, label_test)
+print(clf.score(inp_test, label_test))
 
 
 
